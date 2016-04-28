@@ -1,5 +1,8 @@
 require "smmrize/version"
 require "smmrize/request_types/webpage"
+require "CGI"
+require "net/http"
+require "JSON"
 
 module Smmrize
   class Defaults
@@ -7,15 +10,15 @@ module Smmrize
       attr_writer :api_key, :client_name
 
       def api_key
-        @api_key or raise "API Key is not set"
+        @api_key or raise Exception.new "Smmrize::Defaults API Key is not set"
       end
 
       def client_name
-        @client_name or raise "Client name is not set"
+        @client_name or raise Exception.new "Smmrize::Defaults Client name is not set"
       end
 
       def api_url
-        'http://api.smmry.com'
+        'http://api.smmry.com/'
       end
     end
   end
