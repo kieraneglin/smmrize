@@ -5,10 +5,10 @@ require 'smmrize/version'
 
 Gem::Specification.new do |s|
   s.name        = 'smmrize'
-  s.version     = '0.0.1'
+  s.version     = '0.1.0'
   s.date        = '2016-04-26'
   s.summary     = "Smmrize"
-  s.description = "A simple way to communicate with the SMMRY API"
+  s.description = "A dead-simple way to communicate with the SMMRY API"
   s.authors     = ["Kieran Eglin"]
   s.email       = 'kieran.eglin@gmail.com'
   s.files       = ["lib/smmrize.rb"]
