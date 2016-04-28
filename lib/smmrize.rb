@@ -15,10 +15,6 @@ module Smmrize
         @api_key or raise Exception.new "Smmrize::Defaults API Key is not set"
       end
 
-      def client_name
-        @client_name or raise Exception.new "Smmrize::Defaults Client name is not set"
-      end
-
       def api_url
         'http://api.smmry.com/'
       end
