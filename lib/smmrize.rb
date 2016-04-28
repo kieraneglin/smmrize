@@ -1,5 +1,6 @@
 require "smmrize/version"
 require "smmrize/request_types/webpage"
+require "smmrize/request_types/document"
 require "CGI"
 require "net/http"
 require "JSON"
