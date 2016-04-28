@@ -13,6 +13,7 @@ module Smmrize
   end
 
   def self.prepare_document_options(options)
+    raise ArgumentError, "Options must contain an `input` parameter" unless options.keys.include?(:input)
     raise ArgumentError, "Options must not contain a URl - Did you mean to use `Smmrize.webpage?`" if options.keys.include?(:url)
     options = document_option_defaults.merge(options)
     create_document_query_string(options)
